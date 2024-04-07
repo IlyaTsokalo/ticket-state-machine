@@ -1,0 +1,21 @@
+framework:
+    workflows:
+        ticket:
+            type: state_machine
+            marking_store:
+                property: 'state'
+            supports:
+                - 'App\Entity\Ticket'
+            initial_marking: 'registered'
+            places:
+                - 'registered'
+                - 'paid'
+                - 'cancelled'
+            transitions:
+                to_pay:
+                    from: 'registered'
+                    to: 'paid'
+                to_cancel:
+                    from: ['registered','paid']
+                    to: 'cancelled'
+

@@ -10,11 +10,6 @@
 6. logs covering, and outputs would be improved
 7. To be continued...
 
-## Features
-
-* Production, development and CI ready
-
-
 ## Setup
 1.Run `docker compose build --no-cache` to build fresh images
 2.Run `docker compose up --pull always -d --wait` to start the project

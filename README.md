@@ -1,4 +1,8 @@
 # State machine test task
+State Machine for the Ticket object:
+You need to develop a Symfony application that uses the Symfony Workflow component to manage ticket states. 
+Create a "Ticket" entity with several possible states (for example, "Registered", "Paid", "Cancelled", etc.) and transitions between them.
+Add logic to transitions that might include creating log entries or sending notifications.
 
 ## Important details about the implementation
 
